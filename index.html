@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Studio - Kreativní Digitální Agentura</title>
+    <meta name="description" content="Pixel Studio je kreativní digitální agentura, která se specializuje na tvorbu webových stránek, brandingu a digitálního marketingu.">
+    <meta name="keywords" content="digitální agentura, web design, branding, marketing, Pixel Studio">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Pixel Studio</a>
+            <ul class="nav-links">
+                <li><a href="#about">O nás</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Tým</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Tvoříme digitální zážitky</h1>
+                <p>Moderní design, funkční řešení a kreativní přístup.</p>
+                <a href="#portfolio" class="cta-button">Naše práce</a>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>O nás</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Kdo jsme?</h3>
+                    <p>Jsme Pixel Studio, tým kreativních nadšenců, kteří milují design a technologie. Naším cílem je vytvářet jedinečné a funkční digitální produkty, které pomáhají našim klientům růst. Věříme v sílu dobrého designu a inovativních řešení.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/about.svg" alt="Tým Pixel Studio při práci">
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Vše</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="marketing">Marketing</button>
+                </div>
+                <div class="portfolio-gallery">
+                    <div class="portfolio-item" data-category="web">
+                        <img src="assets/project1.svg" alt="Projekt 1">
+                        <div class="portfolio-overlay">
+                            <h3>Projekt Alpha</h3>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="branding">
+                        <img src="assets/project2.svg" alt="Projekt 2">
+                        <div class="portfolio-overlay">
+                            <h3>Projekt Beta</h3>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="assets/project3.svg" alt="Projekt 3">
+                        <div class="portfolio-overlay">
+                            <h3>Projekt Gamma</h3>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="marketing">
+                        <img src="assets/project4.svg" alt="Projekt 4">
+                        <div class="portfolio-overlay">
+                            <h3>Projekt Delta</h3>
+                            <p>Marketing</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="branding">
+                        <img src="assets/project5.svg" alt="Projekt 5">
+                        <div class="portfolio-overlay">
+                            <h3>Projekt Epsilon</h3>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="assets/project6.svg" alt="Projekt 6">
+                        <div class="portfolio-overlay">
+                            <h3>Projekt Zeta</h3>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="container">
+            <h2>Náš tým</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/team1.svg" alt="Člen týmu 1">
+                    <div class="team-info">
+                        <h3>Jana Nováková</h3>
+                        <p>CEO & Lead Designer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="assets/team2.svg" alt="Člen týmu 2">
+                    <div class="team-info">
+                        <h3>Petr Dvořák</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="assets/team3.svg" alt="Člen týmu 3">
+                    <div class="team-info">
+                        <h3>Eva Černá</h3>
+                        <p>Marketing Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Kontaktujte nás</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Váš email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Vaše zpráva" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Odeslat</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pixel Studio. Všechna práva vyhrazena.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
